@@ -30,7 +30,9 @@ header {
   justify-content: space-between;
   padding: var(--common-padding);
 }
-
+header .options {
+  cursor: pointer;
+}
 main {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -39,7 +41,22 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 main h1 {
   font-family: "League Gothic", sans-serif;
+}
+.options-container {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: -10vh;
+  left: 0;
+  transform: translateX(100vw);
+  transition: transform 0.5s ease-in-out;
+}
+.active {
+  transform: translateX(0);
 }

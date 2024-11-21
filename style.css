@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #000;
+  --primary-text-color: #fff;
+  --common-padding: 0 8vw;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+a {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--common-padding);
+}
+
+main {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  font-family: "League Gothic", sans-serif;
+}
